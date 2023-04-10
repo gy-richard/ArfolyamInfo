@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="animation1" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="animated_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/animation1</item>
+    </style>
+</resources>

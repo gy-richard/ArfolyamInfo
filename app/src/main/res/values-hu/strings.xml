@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ÁrfolyamInfo</string>
+    <string name="amount">Összeg</string>
+    <string name="exchange">Átváltás</string>
+    <string name="register">Regisztráció</string>
+    <string name="email">E-mail cím</string>
+    <string name="password">Jelszó</string>
+    <string name="password_confirm">Jelszó újra</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="homepage">Kezdőlap</string>
+    <string name="convert">Átváltás</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="logout_success">Sikeres kijelentkezés.</string>
+    <string name="error">Hiba</string>
+    <string name="error_no_amount_specified">Nem adott meg összeget!</string>
+    <string name="error_no_email_provided">Nem adott meg e-mail címet!</string>
+    <string name="error_no_password_provided">Nem adott meg jelszót!</string>
+    <string name="login_successful">Sikeres bejelentkezés!</string>
+    <string name="error_login_failed">Sikertelen bejelentkezés!\n\n%s</string>
+    <string name="error_email_invalid">Érvénytelen e-mail cím!</string>
+    <string name="error_password_too_short">A jelszónak legalább 8 karakternek kell lennie!</string>
+    <string name="error_passwords_do_not_match">A két jelszó nem egyezik!</string>
+    <string name="signup_successful">Sikeres regisztráció!</string>
+    <string name="welcome_notification_title">Üdvözöljük!</string>
+    <string name="welcome_notification_body">Köszönjük, hogy regisztrált!</string>
+    <string name="error_signup_failed">Sikertelen regisztráció!\n\n%s</string>
+    <string name="retrieving_exchange_rate">Árfolyam lekérdezése…</string>
+    <string name="error_getting_exchange_rate">Hiba történt az árfolyam lekérdezése során!</string>
+    <string name="error_invalid_number">A megadott szám érvénytelen!</string>
+    <string name="reset">Visszaállítás</string>
+    <string name="reset_success">Sikeres visszaállítás.</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    tools:context=".ConvertActivity">
+
+    <TextView
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/fromAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fromCurrency"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:hint="@string/amount" />
+
+    <Spinner
+        android:id="@+id/fromCurrency"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/currencies"
+        app:layout_constraintStart_toEndOf="@id/fromAmount"
+        app:layout_constraintEnd_toStartOf="@id/toCurrency"
+        app:layout_constraintTop_toTopOf="@id/fromAmount"
+        app:layout_constraintBottom_toBottomOf="@id/fromAmount"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <Spinner
+        android:id="@+id/toCurrency"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/currencies"
+        app:layout_constraintStart_toEndOf="@id/fromCurrency"
+        app:layout_constraintEnd_toStartOf="@id/exchange"
+        app:layout_constraintTop_toTopOf="@id/fromAmount"
+        app:layout_constraintBottom_toBottomOf="@id/fromAmount"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exchange"
+        app:layout_constraintStart_toEndOf="@id/toCurrency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fromAmount"
+        app:layout_constraintBottom_toBottomOf="@id/fromAmount"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginTop="10dp"
+        android:onClick="exchange" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/exchange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

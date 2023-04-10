@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ExchangeInfo</string>
+    <string name="amount">Amount</string>
+    <string name="exchange">Exchange</string>
+    <string name="register">Sign up</string>
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="login">Log in</string>
+    <string name="homepage">Home</string>
+    <string name="convert">Convert</string>
+    <string name="logout">Log out</string>
+    <string name="logout_success">Logged out successfully.</string>
+    <string name="error">Error</string>
+    <string name="error_no_amount_specified">No amount specified.</string>
+    <string name="error_no_email_provided">No email provided.</string>
+    <string name="error_no_password_provided">No password provided.</string>
+    <string name="login_successful">Login successful.</string>
+    <string name="error_login_failed">Login failed.\n\n%s</string>
+    <string name="error_email_invalid">Invalid email address.</string>
+    <string name="error_password_too_short">Password must be at least 8 characters long.</string>
+    <string name="error_passwords_do_not_match">Passwords don\'t match.</string>
+    <string name="signup_successful">Signup successful.</string>
+    <string name="welcome_notification_title">Welcome!</string>
+    <string name="welcome_notification_body">Thank you for registering!</string>
+    <string name="error_signup_failed">Signup failed.\n\n%s</string>
+    <string name="retrieving_exchange_rate">Retrieving exchange rate…</string>
+    <string name="error_getting_exchange_rate">Error getting exchange rate.</string>
+    <string name="error_invalid_number">The specified number is invalid.</string>
+    <string name="reset">Reset</string>
+    <string name="reset_success">Reset successful.</string>
+</resources>
